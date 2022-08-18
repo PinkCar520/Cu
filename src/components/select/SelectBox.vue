@@ -28,7 +28,7 @@
         <!-- options -->
         <div class="select-options" v-show="visiable" @click.stop>
             <!-- tag -->
-            <div class="select-tags">
+            <div class="select-tags" :class="{ changeHeight: selectTag.length > 0 }">
                 <div class="select-tag-item" v-for="(item, index) in selectTag" :key="index">
                     <span class="text-ellipsis">{{ item }}</span>
                     <span @click="del()">
@@ -91,8 +91,8 @@ export default {
         };
     },
     created() {
-        console.log(this.selectTag,"tag");
-        console.log(this.selectOptions,"options");
+        console.log(this.selectTag, "tag");
+        console.log(this.selectOptions, "options");
     },
     mounted() {
         document.addEventListener("click", (event) => { this.cancelPop(event) })
@@ -305,7 +305,7 @@ ul,
 
     // tags
     .select-tags {
-        margin: 5px 0;
+        height: 40px;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -432,5 +432,11 @@ i {
 
 .select-box .dropdownFocus {
     border: 1px solid #409EFF;
+}
+
+// tag_use_change_height_auto
+.select-box .changeHeight {
+    margin: 5px 0;
+    height: auto;
 }
 </style>

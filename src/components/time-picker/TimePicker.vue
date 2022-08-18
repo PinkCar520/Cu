@@ -8,10 +8,6 @@
             </span>
             <input v-model="startDate" placeholder="请选择开始时间">
             <!-- end -->
-            <span>
-                <i class="el-select__caret el-input__icon el-icon-arrow-up" :class="{ 'reverse': isFocus }">
-                </i>
-            </span>
             <!-- <button class="confirms-btn">确定</button> -->
         </div>
         <!-- options -->

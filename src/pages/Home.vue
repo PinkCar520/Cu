@@ -2,8 +2,8 @@
   <div class="home">
     <h3>SelectBox组件:</h3>
     <SelectBox :selectTag="fakeTag" :selectOptions="fakeData"></SelectBox>
-    <h3>TimePicker组件:</h3>
-    <TimePicker></TimePicker>
+    <!-- <h3>TimePicker组件:</h3> -->
+    <!-- <TimePicker></TimePicker> -->
   </div>
 </template>
 
